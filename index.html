@@ -188,8 +188,11 @@
   ol{
     list-style-type: none; 
     display: flex;
-    justify-content: space-around;
-    align-content: space-around;
+    flex-warp: nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   li{
     display: inline-block; 
@@ -208,10 +211,10 @@
             <img class="img_hero" src="./images/hero.png" />
            
         </div>
-        <div class="page_container">
+        <div id="photoshoot" class="page_container">
         <div class="page-heading">
            <ol>
-             <li><h1><a href="#">Recent Model Photoshoot</a></h1></li>
+             <li><h1><a href="#photoshoot">Recent Model Photoshoot</a></h1></li>
              <li><h1><a href="#">Makeups</a></h1></li>
              <li><h1><a href="#">Hairstyles</a></h1></li>
           </ol>
