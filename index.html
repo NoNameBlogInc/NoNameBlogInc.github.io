@@ -18,6 +18,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
+  <script src="https://kit.fontawesome.com/f82d4a66c4.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -216,9 +218,61 @@
     padding: 0.25rem;
     color: white;
   }
+
+  footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333533;
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer div{
+    display: flex;
+   vertical-align: middle;
+   text-align: center;
+   align-items: center;
+   justify-content: space-around;
+   -webkit-box-shadow: -2px -9px 29px -8px rgba(0,0,0,0.66);
+-moz-box-shadow: -2px -9px 29px -8px rgba(0,0,0,0.66);
+box-shadow: -2px -9px 29px -8px rgba(0,0,0,0.66);
+}
+
+
+.mediumIcon{
+
+Font-size: 2rem;
+}
+
+.bigIcon{
+ Font-size: 2rem;
+}
+
+.greenIcon{
+    color: green;
+}
+
+
+
+.shadow--top {
+  top: 0;
+  background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.35), transparent);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), transparent);
+  opacity: 0;
+}
+
+.shadow--bottom {
+  bottom: 0;
+  background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.35), transparent);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), transparent);
+}
 </style>
 
-<body>
+<body >
 
    
     
@@ -583,6 +637,22 @@
         
     </main>
 
+    <footer >
+       <div>
+        <h3 >Contact me via  &nbsp;&nbsp;
+            <a href='https://wa.me/918754565557?text=I%20visited%20your%20website.%20I%20would%20like%20to%20get%20your%20product' id="whatsapp">
+           <i class="fab fa-whatsapp-square bigIcon greenIcon"></i></a> &nbsp;&nbsp; 
+            <a href='sms://+918754565557?body=I%20visited%20your%20website.%20I%20would%20like%20to%20get%20your%20product' id="sms">
+               <i class="fas fa-sms bigIcon" ></i></a> &nbsp;&nbsp;
+            <a href='tel:+918754565557' id="call"><i class="fas fa-phone-alt mediumIcon "></i> </a> &nbsp;&nbsp;
+             <a href='mailto:sunandhaghanithan412@gmail.com?subject=Hi! This is an enquiry&body=Hi! I visited your website. I would like to 
+           Enquire on bridal makeover. Please get in touch with me with your catalog' id="email"><i class="fas fa-envelope-open-text mediumIcon" ></i></a>
+           </h3>
+        </div>
+        <div>
+           <small>&copy; Copyright 2022, Sunandha Ghanithan</small>
+        </div>
+    </footer>
     
 </body>
 
