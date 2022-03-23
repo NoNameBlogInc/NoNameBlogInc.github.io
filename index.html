@@ -100,12 +100,12 @@
         gap: 6px 6px;
         grid-auto-flow: row;
         grid-template-areas:
-            "pic1 pic1 . . pic8 pic8"
-            "pic1 pic1 pic2 pic2 pic8 pic8"
+            "pic1 pic1 pic8 pic8 pic9 pic9"
+            "pic1 pic1 pic8 pic8 pic9 pic9"
             "pic4 pic4 pic2 pic2 pic3 pic3"
-            "pic4 pic4 pic5 pic5 pic3 pic3"
+            "pic4 pic4 pic2 pic2 pic3 pic3"
             "pic7 pic7 pic5 pic5 pic6 pic6"
-            "pic7 pic7 . . pic6 pic6";
+            "pic7 pic7 pic5 pic5 pic6 pic6";
         }
 
         .pic1 { grid-area: pic1; }
@@ -118,6 +118,8 @@
         .pic5 { grid-area: pic5; }
         .pic6 { grid-area: pic6; }
         .pic7 { grid-area: pic7; }
+        .pic8 { grid-area: pic8; }
+        .pic9 { grid-area: pic9; }
 
 
         .img_pic{
@@ -201,15 +203,17 @@
   }
   li{
     display: inline-block; 
+    padding: 1rem;
   }
   a{
     text-decoration: none; 
+     color: white;
   }
   
   h1{
-    padding: 1rem;
+    border-radius: 5px;
     background-color: #274c77;
-    color: white;
+    
   }
 </style>
 
@@ -222,7 +226,7 @@
             <img class="img_hero" src="./images/hero.png" />
            
         </div>
-        <div id="photoshoot" class="page_container">
+        <div class="page_container">
         <div class="page-heading">
            <ol>
              <li><h1><a href="#photoshoot">Photoshoot</a></h1></li>
@@ -230,6 +234,10 @@
              <li><h1><a href="#hairstyles">Hairstyles</a></h1></li>
              <li><h1><a href="#mehndi">Mehndi</a></h1></li>
           </ol>
+       </div>
+          
+       <div id="photoshoot" class="page-heading">
+         <h1>Recent Photoshoot</h1>
        </div>
         <div class="container">
            
@@ -260,6 +268,10 @@
           
           <div class="pic8">
                 <img class="img_pic img_container" src="./images/pics/rih/WhatsApp Image 2022-03-22 at 22.24.57.jpeg" />
+            </div>
+          
+           <div class="pic9">
+                <img class="img_pic img_container" src="./images/pics/rih/WhatsApp Image 2022-03-22 at 22.27.59 (2).jpeg" />
             </div>
           
         </div>
