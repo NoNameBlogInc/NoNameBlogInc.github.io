@@ -97,15 +97,15 @@
         width: 100%;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 0px 6px;
+        gap: 6px 6px;
         grid-auto-flow: row;
         grid-template-areas:
             "pic1 pic1 . . . ."
             "pic1 pic1 pic2 pic2 . ."
-            "pic1 pic1 pic2 pic2 pic3 pic3"
-            "pic1 pic1 pic2 pic2 pic3 pic3"
-            ". . pic2 pic2 pic3 pic3"
-            ". . . . pic3 pic3";
+            "pic4 pic4 pic2 pic2 pic3 pic3"
+            "pic4 pic4 pic5 pic5 pic3 pic3"
+            "pic7 pic7 pic5 pic5 pic6 pic6"
+            "pic7 pic7 . . pic6 pic6";
         }
 
         .pic1 { grid-area: pic1; }
@@ -113,6 +113,11 @@
         .pic2 { grid-area: pic2; }
 
         .pic3 { grid-area: pic3; }
+  
+        .pic4 { grid-area: pic4; }
+        .pic5 { grid-area: pic5; }
+        .pic6 { grid-area: pic6; }
+        .pic7 { grid-area: pic7; }
 
 
         .img_pic{
@@ -214,9 +219,10 @@
         <div id="photoshoot" class="page_container">
         <div class="page-heading">
            <ol>
-             <li><h1><a href="#photoshoot">Recent Model Photoshoot</a></h1></li>
-             <li><h1><a href="#">Makeups</a></h1></li>
-             <li><h1><a href="#">Hairstyles</a></h1></li>
+             <li><h1><a href="#photoshoot">Photoshoot</a></h1></li>
+             <li><h1><a href="#makeups">Makeups</a></h1></li>
+             <li><h1><a href="#hairstyles">Hairstyles</a></h1></li>
+             <li><h1><a href="#mehndi">Mehndi</a></h1></li>
           </ol>
        </div>
         <div class="container">
@@ -231,18 +237,15 @@
             <div class="pic3">
                 <img class="img_pic img_container" src="./images/pics/rih/side_hair_pose.jpeg" />
             </div>
-        </div>
-        <div class="container">
-           
-           
-            <div class="pic1">
-                <img class="img_pic img_container" src="./images/pics/rih/back.jpeg" />
+      
+            <div class="pic4">
+                <img class="img_pic img_container" src="./images/pics/rih/side_hair.jpeg" />
             </div>
-            <div class="pic2">
-                <img class="img_pic img_container" src="./images/pics/rih/pose1.jpeg" />
+            <div class="pic5">
+                <img class="img_pic img_container" src="./images/pics/rih/pose2.jpeg" />
             </div>
-            <div class="pic3">
-                <img class="img_pic img_container" src="./images/pics/rih/side_hair_pose.jpeg" />
+            <div class="pic6">
+                <img class="img_pic img_container" src="./images/pics/rih/WhatsApp Image 2022-03-22 at 22.24.56.jpeg" />
             </div>
         </div>
     </div>
