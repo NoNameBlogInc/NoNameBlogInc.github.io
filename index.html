@@ -95,9 +95,10 @@
     }
     .container {  
         
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+       /*  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 6px 6px;
         grid-auto-flow: row;
@@ -108,7 +109,15 @@
             "pic4 pic4 pic2 pic2 pic3 pic3"
             "pic7 pic7 pic5 pic5 pic6 pic6"
             "pic7 pic7 pic5 pic5 pic6 pic6";
-        }
+            */
+        } 
+
+        .pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7, .pic8, .pic9 {
+            flex: 1 0 25%; /* explanation below */
+            margin: 5px;
+            height: auto;
+           
+            }
 
         .pic1 { grid-area: pic1; }
 
@@ -187,13 +196,16 @@
 
         .page-heading{
             text-align: center;
- 
+            padding: 0;
         }
 
         .page-heading h1{
-            font-size: min(calc(75vw - 12rem) / 7, 2rem);
+            font-size: min(calc(80vw - 12rem) / 5, 3rem);
             color: #274c77;
         }
+
+        
+        
   
   ol{
     list-style-type: none; 
@@ -206,8 +218,12 @@
   }
   li{
     display: inline-block; 
+    padding: 0;
   }
   a{
+    font-size: min(calc(75vw - 12rem) / 7, 2rem);
+    text-align: center;
+    vertical-align: middle;
     text-decoration: none; 
      color: white;
   }
@@ -318,7 +334,7 @@ Font-size: 2rem;
                 <img class="img_pic img_container" src="./images/pics/photoshoot/3.jpeg" />
             </div>
             <div class="pic5">
-                <img class="img_pic img_container" src="./images/pics/rih/WhatsApp Image 2022-03-22 at 22.24.57.jpeg" />
+                <img class="img_pic img_container" src="./images/pics/rih/pose2.jpeg" />
             </div>
             <div class="pic6">
                 <img class="img_pic img_container" src="./images/pics/photoshoot/4.jpeg" />
@@ -329,7 +345,7 @@ Font-size: 2rem;
             </div>
           
           <div class="pic8">
-                <img class="img_pic img_container" src="./images/pics/rih/pose2.jpeg" />
+                <img class="img_pic img_container" src="./images/pics/rih/WhatsApp Image 2022-03-22 at 22.24.57.jpeg" />
             </div>
           
            <div class="pic9">
@@ -355,7 +371,7 @@ Font-size: 2rem;
                 <img class="img_pic img_container" src="./images/pics/rih/side_hair.jpeg" />
             </div>
             <div class="pic5">
-                <img class="img_pic img_container" src="./images/pics/rih/pose2.jpeg" />
+                <img class="img_pic img_container" src="./images/pics/rih/WhatsApp Image 2022-03-22 at 22.24.56.jpeg" />
             </div>
             <div class="pic6">
                 <img class="img_pic img_container" src="./images/pics/photoshoot/9.jpeg" />
